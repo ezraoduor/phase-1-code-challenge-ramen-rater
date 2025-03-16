@@ -60,4 +60,10 @@ function addSubmitListener() {
         };
 
         
-       
+        if (!newRamen.name || !newRamen.restaurant || !newRamen.image || isNaN(newRamen.rating) || !newRamen.comment) {
+            return  alert("All fields are required and rating must be a number.");
+                    ;
+                 }
+
+        
+
