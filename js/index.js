@@ -66,4 +66,11 @@ function addSubmitListener() {
                  }
 
         
+                 if (newRamen.rating < 1 || newRamen.rating > 10) {
+                    return  alert("Rating must be between 1 and 10.");
+                          ;
+                       }
+
+        
+       
 
