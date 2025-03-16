@@ -44,4 +44,20 @@ function handleClick(ramen) {
     document.getElementById("ramen-comment").textContent = `Comment: ${ramen.comment}`;
 }
 
+function addSubmitListener() {
+    const ramenForm = document.getElementById("new-ramen-form");
 
+    ramenForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        
+        const newRamen = {
+            name: event.target.name.value,
+            restaurant: event.target.restaurant.value,
+            image: event.target.image.value,
+            rating: parseInt(event.target.rating.value, 10),
+            comment: event.target.comment.value,
+        };
+
+        
+       
